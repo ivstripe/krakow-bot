@@ -21,7 +21,7 @@ def search_nearby(lat, lng, place_type, open_until_hour=None):
     url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {
         "location": f"{lat},{lng}",
-        "radius": 1000,
+        "radius": 5000,
         "type": place_type,
         "opennow": "true",
         "key": GOOGLE_API_KEY,
