@@ -65,7 +65,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "👋 Welcome to Kraków Places Bot!\n\n"
         "Commands:\n"
-        "/supermarket — find open supermarkets within 1km\n"
+        "/supermarket — find open supermarkets within 5km\n"
         "/open till 6 pm — find places open until a specific time\n"
     )
 
