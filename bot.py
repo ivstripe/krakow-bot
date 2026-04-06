@@ -90,7 +90,7 @@ def format_results(places, place_type):
         address = p.get("vicinity")
         rating = p.get("rating", "N/A")
         place_id = p.get("place_id")
-        maps_link = f"https://www.google.com/maps/place/?q=place_id:{place_id}"
+        maps_link = f"https://www.google.com/maps/search/?api=1&query={requests.utils.quote(name)}&query_place_id={place_id}"
         lines.append(f"{i}. *{name}*\n📍 {address}\n⭐ {rating}\n🔗 [Open in Maps]({maps_link})")
     return "\n\n".join(lines)
 
